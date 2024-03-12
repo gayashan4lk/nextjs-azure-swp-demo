@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center pt-24">
       <div>Time on server is {timeOnServer}</div>
+      <div>Client component added</div>
       <CurrentTimeFromAPI />
     </main>
   );
