@@ -21,6 +21,9 @@ export function CurrentTimeFromAPI() {
 	return (
 		<div className='pt-4'>
 			The message from the API is: <strong>{apiResponse}</strong>
+			<div>
+				Env variable for browser: {process.env.NEXT_PUBLIC_FUNTIMES}
+			</div>
 		</div>
 	)
 }

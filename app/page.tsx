@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { unstable_noStore as noStore } from 'next/cache';
 import { CurrentTimeFromAPI } from '@/app/components/CurrentTimeFromApi'
 
@@ -10,6 +9,12 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center pt-24">
       <div>Time on server is {timeOnServer}</div>
       <div>Client component added</div>
+      <div>Env variable for server
+        <ul>
+          <li>Node version: {process.env.NODE_ENV}</li>
+          <li>Cosmos Connection: {process.env.COSMOS_CONNECTION}</li>
+        </ul>
+      </div>
       <CurrentTimeFromAPI />
     </main>
   );
