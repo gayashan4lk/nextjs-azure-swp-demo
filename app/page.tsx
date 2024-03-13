@@ -1,5 +1,5 @@
 import { unstable_noStore as noStore } from 'next/cache';
-import { CurrentTimeFromAPI } from '@/app/components/CurrentTimeFromApi'
+import { CurrentTimeFromAPI } from '@/components/CurrentTimeFromApi'
 
 export default function Home() {
   noStore();
