@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 
 export function CurrentTimeFromAPI() {
+	const funtimes = process.env.NEXT_PUBLIC_FUNTIMES;
 	const [apiResponse, setApiResponse] = useState('');
 	const [loading, setLoading] = useState(true);
 
@@ -22,7 +23,7 @@ export function CurrentTimeFromAPI() {
 		<div className='pt-4'>
 			The message from the API is: <strong>{apiResponse}</strong>
 			<div>
-				Env variable for browser: {process.env.NEXT_PUBLIC_FUNTIMES}
+				Env variable for browser: {funtimes == "" ? 'No fun' : funtimes}
 			</div>
 		</div>
 	)
